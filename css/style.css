@@ -25,15 +25,21 @@ body{
   z-index: 1;
 }
 
-button{
+.nav-buttons a{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
   cursor: pointer;
-  background-color: white;
+  background-color: black;
+  color: white;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  border: none;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  box-sizing: content-box;
 }
+
 /* Immagine e Dettaglio */
 .shoe{
   text-align: center;
@@ -43,20 +49,42 @@ button{
   transform: translate(-50%,-50%);
 }
 
+.shoe img{
+  width: 80%;
+  filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+}
+
 .shoe h2{
   color: white;
   font-size: 3vw;
   text-transform: uppercase;
+  text-shadow: -5px 0 2px rgba(0,0,0,0.4);
+  filter: blur(0.4px);
 }
 
+/* Al passaggio del mouse... */
+.shoe img:hover{
+  transform: scale(1.1) rotate(20deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+}
+
+.nav-buttons a:hover{
+  border: 2px solid white;
+}
+
+.nav-buttons a:active{
+  transform: scale(0.97) translateY(1px);
+}
+
+/* Colori di sfondo dei contenitori */
 #uno{
   background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #due{
-  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff5f6d, #ffc371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #6d6027, #d3cbb8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6d6027, #d3cbb8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #tre{
