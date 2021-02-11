@@ -78,13 +78,13 @@ body{
 
 /* Colori di sfondo dei contenitori */
 #uno{
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+  background: linear-gradient(to right, #605C3C, #3C3B3F);
 }
 
 #due{
-  background: -webkit-linear-gradient(to right, #6d6027, #d3cbb8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6d6027, #d3cbb8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #6d6027, #d3cbb8);
+  background: linear-gradient(to right, #6d6027, #d3cbb8);
 }
 
 #tre{
