@@ -6,11 +6,15 @@
 }
 
 /* Common */
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Fugaz One', Helvetica, sans-serif;
 }
 
-.container{
+section{
   width: 100%;
   height: 100vh;
   background: #3C3B3F;  /* fallback */
@@ -18,14 +22,14 @@ body{
 }
 
 /* Bottoni */
-.nav-buttons{
+nav{
   position: fixed;
   top: 15px;
   right: 15px;
   z-index: 1;
 }
 
-.nav-buttons a{
+nav a{
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -35,6 +39,8 @@ body{
   color: black;
   height: 3vh;
   width: 3vh;
+  min-height: 20px;
+  min-width: 20px;
   font-size: 2.2vh;
   border-radius: 50%;
   box-sizing: content-box;
@@ -83,26 +89,26 @@ body{
   }
 }
 
-.nav-buttons a:hover{
+nav a:hover{
   box-shadow: inset 4px 4px 4px rgba(176, 174, 177, 0.3) ;
 }
 
-.nav-buttons a:active{
+nav a:active{
   transform: scale(0.97) translateY(1px);
 }
 
 /* Colori di sfondo dei contenitori */
-.uno{
+.prima-sezione{
   background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
   background: linear-gradient(to right, #605C3C, #3C3B3F);
 }
 
-.due{
+.seconda-sezione{
   background: -webkit-linear-gradient(to right, #6d6027, #d3cbb8);
   background: linear-gradient(to right, #6d6027, #d3cbb8);
 }
 
-.tre{
+.terza-sezione{
   background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,151,141,0.7682423311121324) 19%, rgba(255,255,255,1) 100%);
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,151,141,0.7682423311121324) 19%, rgba(255,255,255,1) 100%);
 }
